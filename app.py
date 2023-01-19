@@ -2,11 +2,11 @@ import os
 from flask import Flask,redirect, request, render_template, request, url_for
 import pymysql
 
-db = pymysql.connect(host='mysql1',user='root',password="",port=3306)
-cursor = db.cursor()
-cursor.execute("CREATE DATABASE IF NOT EXISTS student_db")
-cursor.execute("USE student_db")
-cursor.execute("CREATE TABLE IF NOT EXISTS students (name VARCHAR(20),class VARCHAR(20),age VARCHAR(10),address VARCHAR(100))")
+#db = pymysql.connect(host='mysql1',user='root',password="",port=3306)
+#cursor = db.cursor()
+#cursor.execute("CREATE DATABASE IF NOT EXISTS student_db")
+#cursor.execute("USE student_db")
+#cursor.execute("CREATE TABLE IF NOT EXISTS students (name VARCHAR(20),class VARCHAR(20),age VARCHAR(10),address VARCHAR(100))")
 
 app = Flask(__name__)
 
